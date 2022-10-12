@@ -1,6 +1,4 @@
-# email-deep-validator
-
-[![Build Status](https://travis-ci.org/getconversio/email-deep-validator.svg?branch=master)](https://travis-ci.org/getconversio/email-deep-validator)
+# email-deep-validator-ts
 
 Verify email address checking MX records, and SMTP connection.
 
@@ -8,7 +6,7 @@ Verify email address checking MX records, and SMTP connection.
 
 Install the module through NPM:
 
-    $ npm install email-deep-validator --save
+    $ npm install email-deep-validator-ts --save
 
 **Requires Node 7.6 or above**
 
@@ -17,7 +15,7 @@ Install the module through NPM:
 Include the module, create a new `EmailValidator` object and call `verify` method:
 
 ```javascript
-const EmailValidator = require('email-deep-validator');
+const EmailValidator = require('email-deep-validator-ts');
 
 const emailValidator = new EmailValidator();
 const { wellFormed, validDomain, validMailbox } = await emailValidator.verify('foo@email.com');
