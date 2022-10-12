@@ -1,0 +1,30 @@
+{
+  "name": "email-deep-validator-ts",
+  "version": "1.0.0",
+  "description": "TypeScript package to verify email address checking MX records, and SMTP connection.",
+  "main": "lib/index.ts",
+  "scripts": {
+    "autotest": "node_modules/.bin/supervisor -q -n exit -x node_modules/.bin/mocha -- -b",
+    "test": "node_modules/.bin/mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanpabloceliz/email-deep-validator-ts.git"
+  },
+  "author": "Juan Pablo Celiz <juanpablo.celiz@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juanpabloceliz/email-deep-validator-ts/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^18.8.4",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "sinon": "^6.0.0",
+    "supervisor": "^0.12.0"
+  },
+  "dependencies": {
+    "loglevel": "^1.6.1"
+  },
+  "types": "lib/index.d.js"
+}
